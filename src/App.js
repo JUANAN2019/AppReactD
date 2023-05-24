@@ -28,7 +28,7 @@ function App() {
         
           <Route path='/Rick and Morty' element={<Mainpage />}></Route>
           <Route path='/characters/:id' element={<Characters />}></Route>
-          <Route path="/suscriptores" element={<UserPage />} />
+          <Route path="/suscriptores" element={<UserPage />} ></Route>
           <Route path="/animes" element={<AnimePage />}> </Route>
           
         </Routes>

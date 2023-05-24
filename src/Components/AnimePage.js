@@ -45,8 +45,8 @@ const AnimePage = () => {
         ))}
       </div>
       {selectedAnime && (
-        <div className="modal">
-          <div className="modal-content">
+        <div className="modal-anime">
+          <div className="modal-content-anime">
             <h2>{selectedAnime.attributes.canonicalTitle}</h2>
             <p>{selectedAnime.attributes.synopsis}</p>
             <button onClick={handleCloseModal}>Close</button>

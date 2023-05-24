@@ -48,7 +48,7 @@
   margin-bottom: 20px;
 }
 
-.modal {
+.modal-anime {
   position: fixed;
   top: 0;
   left: 0;
@@ -60,7 +60,7 @@
   justify-content: center;
 }
 
-.modal-content {
+.modal-content-anime {
   background-color: #fff;
   padding: 20px;
   max-width: 400px;
@@ -68,17 +68,17 @@
   border-radius: 8px;
 }
 
-.modal-content h2 {
+.modal-content-anime h2 {
   font-size: 15px;
   margin-bottom: 10px;
 }
 
-.modal-content p {
+.modal-content-anime p {
   font-size: 16px;
   margin-bottom: 20px;
 }
 
-.modal-content button {
+.modal-content-anime button {
   background-color: #ff4081;
   color: #fff;
   border: none;
