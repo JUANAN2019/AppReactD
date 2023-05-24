@@ -7,7 +7,7 @@ import Carrusel  from './Components/Carrusel';
 import NavInferior from './Components/NavInferior';
 import Formulario from './Components/Formulario';
 import React from 'react';
-
+import Characters from './Components/Characters';
 import Footer from './Components/Footer';
 import AnimePage from './Components/AnimePage';
 import UserPage from './Components/UserPage';
@@ -28,7 +28,7 @@ function App() {
         <Routes >
         
           <Route path='/Rick and Morty' element={<Mainpage />}></Route>
-          
+          <Route path='/characters/:id' element={<Characters />}></Route>
           <Route path="/suscriptores" element={<UserPage />} />
            <Route path="/animes" element={<AnimePage />} />
           
