@@ -1,0 +1,6 @@
+.carrusel img {
+    padding-top: 50px;
+    object-fit: cover;
+    height: 700px;
+    width: 100%;
+}
