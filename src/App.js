@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route,Link } from 'react-router-dom';
 import Mainpage from './Components/Main';
-
+import Characters from './Components/Characters';
 import NavCompleto from './Components/NavCompletoS';
 import Carrusel  from './Components/Carrusel';
 import Formulario from './Components/Formulario';
@@ -16,7 +16,7 @@ import Inicio from './Components/Inicio';
 function App() {
   return (
     <>
-      <bubbles />
+     
      
       <NavCompleto/>
       <Carrusel/>
@@ -27,8 +27,9 @@ function App() {
         <Routes >
         
           <Route path='/Rick and Morty' element={<Mainpage />}></Route>
+          <Route path='/characters/:id' element={<Characters />}></Route>
           <Route path="/suscriptores" element={<UserPage />} />
-          <Route path="/animes" element={<AnimePage />} />
+          <Route path="/animes" element={<AnimePage />}> </Route>
           
         </Routes>
       </BrowserRouter>
