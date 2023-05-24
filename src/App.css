@@ -96,7 +96,7 @@ h1 {
 /* Estilos del grid */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 20px;
   justify-items: center;
 }
@@ -126,3 +126,15 @@ h1 {
   margin-bottom: 10px;
 }
 
+/* Estilos para dispositivos móviles */
+@media only screen and (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

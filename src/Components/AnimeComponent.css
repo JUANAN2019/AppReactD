@@ -91,3 +91,12 @@
 .modal-content button:hover {
   background-color: #d81b60;
 }
+@media only screen and (max-width: 600px) {
+  .anime-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .anime-card {
+    width: 100%;
+  }
+}
