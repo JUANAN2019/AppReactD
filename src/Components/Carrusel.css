@@ -1,6 +1,10 @@
-.carrusel img {
-    padding-top: 50px;
+.Carouselmain img{
+    padding-top: 70px;
     object-fit: cover;
-    height: 700px;
+    height: 600px;
     width: 100%;
+}
+
+.Carouselmain p h3 {
+    color: black;
 }

@@ -4,8 +4,6 @@ import ReCAPTCHA from "react-google-recaptcha"
 import React, { useRef, useState } from 'react';
 import  './formulario.css';
 
-
-
 function Formulario() {
   const [captchaValido, cambiarCaptchaValido] = useState(null);
   const [usuarioValido, cambiarUsuarioValido] = useState(false);
@@ -29,24 +27,25 @@ function Formulario() {
     }
   }
   return (
-    <Form onSubmit={submit}>
+    <Form onSubmit={submit} action="https://formspree.io/f/xqkoobgq"
+    method="POST">
        
-      <h1>Registrate</h1>
+      <h1>Log in</h1>
      
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
+        <Form.Label>Mail</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
         <Form.Text className="text-muted">
           We'll never share your email with anyone else.
         </Form.Text>
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
+      <Form.Group className="mb-3" controlId="formBasicPassword" >
         <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Control type="password" placeholder="Password" required />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
+        <Form.Check type="checkbox" label="Check me out" required />
       </Form.Group>
       <ReCAPTCHA
         ref={captcha}
@@ -54,17 +53,11 @@ function Formulario() {
         onChange={onChange} />
         {captchaValido===false && <div className='error-captcha'>Por favor acepta captcha</div>}
 
-      <Button variant="primary" type="submit">
+      <Button variant="primary" type="submit" >
         Submit
       </Button>
      
-      <div>
-        <h1>Bienvenido</h1>
-      </div>
-
-
-
-    </Form>
+     </Form>
   );
 }
 

@@ -7,7 +7,7 @@ const Inicio = () => {
       <nav>
         <ul>
         <li>
-            <Link to="/Inicio"><h2>Morty's Anime World© </h2></Link>
+            <Link to="/Inicio"></Link>
           </li>
         <li>
             <Link to="/Rick and Morty"></Link>
