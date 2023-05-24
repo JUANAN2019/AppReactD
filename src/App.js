@@ -27,8 +27,9 @@ function App() {
         <Routes >
         
           <Route path='/Rick and Morty' element={<Mainpage />}></Route>
+          
           <Route path="/suscriptores" element={<UserPage />} />
-          <Route path="/animes" element={<AnimePage />} />
+           <Route path="/animes" element={<AnimePage />} />
           
         </Routes>
       </BrowserRouter>

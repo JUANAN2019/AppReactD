@@ -25,10 +25,10 @@ const UserPage = () => {
 
   return (
     <div className="container">
-      <h1>Random Users</h1>
+      <h1>Users of the world who have used our service</h1>
       <div className="button-container">
         <button className="refresh-button" onClick={handleRefresh}>
-          Actualizar
+          Refresh
         </button>
       </div>
       <div className="grid-container">
