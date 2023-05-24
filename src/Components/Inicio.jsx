@@ -7,16 +7,16 @@ const Inicio = () => {
       <nav>
         <ul>
         <li>
-            <Link to="/">Inicio</Link>
+            <Link to="/Inicio"></Link>
           </li>
         <li>
-            <Link to="/Rick and Morty">Rick and Morty</Link>
+            <Link to="/Rick and Morty"></Link>
           </li>
           <li>
-            <Link to="/suscriptores">Usuarios </Link>
+            <Link to="/suscriptores"></Link>
           </li>
           <li>
-            <Link to="/animes">Animes</Link>
+            <Link to="/animes"></Link>
           </li>
         </ul>
       </nav>

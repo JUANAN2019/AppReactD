@@ -6,7 +6,7 @@ import './NavCompleto.css';
 
 function NavCompletoS() {
   return (
-    <div navCom>
+    <div className="navCom">
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='fluidcontent'>
       <div>
           <img className="logo" src="/logo.png" height="70px" alt="RickandMortyReact" />
