@@ -4,7 +4,6 @@ import Mainpage from './Components/Main';
 
 import NavCompleto from './Components/NavCompletoS';
 import Carrusel  from './Components/Carrusel';
-import NavInferior from './Components/NavInferior';
 import Formulario from './Components/Formulario';
 import React from 'react';
 
@@ -18,8 +17,8 @@ function App() {
   return (
     <>
       <bubbles />
-      <NavInferior/>
-      {/*<NavCompleto/>*/}
+     
+      <NavCompleto/>
       <Carrusel/>
       
       <BrowserRouter>
@@ -28,9 +27,8 @@ function App() {
         <Routes >
         
           <Route path='/Rick and Morty' element={<Mainpage />}></Route>
-          
           <Route path="/suscriptores" element={<UserPage />} />
-           <Route path="/animes" element={<AnimePage />} />
+          <Route path="/animes" element={<AnimePage />} />
           
         </Routes>
       </BrowserRouter>
